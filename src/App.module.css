@@ -1,0 +1,117 @@
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Live banner */
+.liveBanner {
+  background: #fff8ee; border-bottom: 1.5px solid #fde5c9;
+  padding: 11px 24px; display: flex; align-items: center;
+  justify-content: center; gap: 12px; flex-wrap: wrap;
+}
+.liveDot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #e76f00; animation: pulse 1.5s infinite; flex-shrink: 0;
+}
+.liveBanner span { font-size: 14px; color: #7a4a10; }
+.liveBtn {
+  font-size: 13px; font-weight: 700; color: #fff;
+  background: #e76f00; padding: 6px 16px; border-radius: 20px;
+  transition: background 0.2s; text-decoration: none;
+}
+.liveBtn:hover { background: #c75e00; }
+
+/* Main */
+.main { max-width: 860px; margin: 0 auto; padding: 52px 24px 72px; width: 100%; flex: 1; }
+
+/* Section */
+.section { margin-bottom: 0; }
+
+.sectionTitle { margin-bottom: 32px; }
+.sectionTitle h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 800; color: #111f16; margin-bottom: 6px; line-height: 1.2;
+}
+.sectionTitle p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+
+/* Role grid */
+.roleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 36px;
+}
+@media (max-width: 720px) { .roleGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 400px) { .roleGrid { grid-template-columns: 1fr 1fr; gap: 10px; } }
+
+/* Empty state */
+.emptyState {
+  text-align: center; padding: 48px 20px 36px;
+  color: var(--text-muted); margin-bottom: 0;
+}
+.emptyIcon { font-size: 2rem; margin-bottom: 10px; }
+.emptyText { font-size: 15px; }
+
+/* Divider */
+.divider { border: none; border-top: 1.5px solid var(--border); margin: 52px 0; }
+
+/* QR Lifecycle */
+.lifecycle { position: relative; margin-bottom: 24px; padding-left: 0; }
+.lifecycleLine {
+  position: absolute; left: 22px; top: 46px; bottom: 46px;
+  width: 2px; background: linear-gradient(to bottom, #74c69d, #d8f3dc); border-radius: 1px;
+}
+.lcStep { display: flex; gap: 18px; padding-bottom: 26px; align-items: flex-start; }
+.lcDot {
+  width: 44px; height: 44px; border-radius: 50%; background: #fff;
+  border: 2.5px solid #74c69d; display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0; position: relative; z-index: 1;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.lcContent { padding-top: 9px; }
+.lcTitle { font-weight: 700; font-size: 15px; color: #111f16; margin-bottom: 3px; }
+.lcDesc { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+.calloutGreen {
+  display: flex; gap: 12px; padding: 14px 18px;
+  background: var(--green-50); border: 1.5px solid #b7e4c7;
+  border-radius: 12px; font-size: 14px; color: #1a3a2a; line-height: 1.65;
+}
+
+/* Tips */
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.tipCard {
+  background: #fff; border: 1.5px solid var(--border);
+  border-radius: 16px; padding: 20px 18px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.tipCard:hover {
+  border-color: var(--green-300);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+.tipIcon { font-size: 1.6rem; margin-bottom: 10px; }
+.tipTitle {
+  font-family: var(--font-display); font-weight: 700; font-size: 14px;
+  color: #111f16; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;
+}
+.soon {
+  font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+  background: #fef3c7; color: #92400e; padding: 2px 7px; border-radius: 6px;
+  font-family: var(--font-body);
+}
+.tipText { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* Footer */
+.footer {
+  background: #0a2216; color: rgba(255,255,255,0.45);
+  text-align: center; padding: 36px 24px; font-size: 13px; line-height: 2;
+}
+.footerLogo {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: 20px; color: #74c69d; margin-bottom: 6px;
+}
+.footerSub { margin-top: 6px; font-size: 12px; opacity: 0.6; }
+
+@media (max-width: 600px) { .main { padding: 36px 16px 52px; } }

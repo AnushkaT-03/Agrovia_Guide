@@ -1,0 +1,116 @@
+.section {
+  padding: 96px 24px;
+  background: var(--cream);
+}
+.inner { max-width: 1080px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 52px; }
+.eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--foam);
+  border: 1px solid var(--border);
+  padding: 5px 14px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+.h2 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--forest);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--paper);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover { border-color: var(--sage); box-shadow: var(--shadow-sm); }
+
+.cardIcon { font-size: 1.8rem; }
+.cardTitle {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--forest);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.soon {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  background: var(--amber-lt);
+  color: #8a4f00;
+  border-radius: 99px;
+  padding: 2px 9px;
+  border: 1px solid #f5c990;
+}
+.cardText {
+  font-size: 0.86rem;
+  color: var(--ink-mid);
+  line-height: 1.6;
+  font-weight: 300;
+  flex: 1;
+}
+.cardLink {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+  margin-top: 4px;
+}
+.cardLink:hover { text-decoration: underline; }
+
+/* Footer */
+.footer {
+  background: var(--forest);
+  padding: 52px 24px;
+  text-align: center;
+}
+.footerInner {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footerLogo {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--mint);
+  letter-spacing: -0.02em;
+}
+.footerTagline {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.footerCredit {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  font-weight: 300;
+}

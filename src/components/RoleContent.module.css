@@ -1,0 +1,143 @@
+.wrapper {
+  animation: fadeUp 0.4s ease;
+}
+
+/* Hero banner */
+.heroBanner {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  min-height: 160px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding: 32px 32px 30px;
+  color: #fff;
+}
+
+.heroLabel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.heroSubtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 14px;
+}
+
+.heroIntro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.82);
+  max-width: 520px;
+}
+
+.heroBgEmoji {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  font-size: 110px;
+  opacity: 0.07;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Callout */
+.callout {
+  display: flex;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 13px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.65;
+  align-items: flex-start;
+}
+
+.calloutIcon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.calloutInfo {
+  background: var(--green-50);
+  border: 1.5px solid #b7e4c7;
+  color: var(--green-700);
+}
+
+.calloutKey {
+  background: var(--green-700);
+  border: 1.5px solid var(--green-600);
+  color: rgba(255,255,255,0.9);
+}
+
+:global(.passkey-highlight) {
+  font-family: var(--font-display);
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #fde68a;
+  font-weight: 800;
+}
+
+/* Section */
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.sectionBar {
+  width: 22px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+/* Logout note */
+.logoutNote {
+  display: flex;
+  gap: 10px;
+  padding: 13px 16px;
+  background: #fff8ee;
+  border: 1.5px solid #fde5c9;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #7a4a10;
+  line-height: 1.6;
+  margin-top: 4px;
+}
